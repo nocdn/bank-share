@@ -3,6 +3,8 @@
     export let sortCode;
     export let accountNumber;
 
+    export let color;
+
     // Variables to control the temporary icon display
     let isSortCodeCopied = false;
     let isAccountNumberCopied = false;
@@ -29,7 +31,7 @@
     }
 </script>
 
-<detail-container>
+<detail-container class={color}>
     <h2>{name}</h2>
     <div class="numbers-container">
         <a
@@ -131,5 +133,35 @@
     .numbers-container {
         display: flex;
         gap: 1.5rem;
+    }
+
+    .green {
+        background-color: #ecf7ed;
+        color: #143d19;
+    }
+
+    .orange {
+        background-color: #fff3e0;
+        color: #872f10;
+    }
+
+    .red {
+        background-color: #feeae9;
+        color: #861717;
+    }
+
+    .pink {
+        background-color: #fdeef7;
+        color: #a81650;
+    }
+
+    .blue {
+        background-color: #e5f4fb;
+        color: #142f39;
+    }
+
+    .purple {
+        background-color: #e7ebfa;
+        color: #15183e;
     }
 </style>
